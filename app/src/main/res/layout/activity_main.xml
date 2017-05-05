@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#981a43"
+    tools:context="com.example.sidnei.appemail.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nome:"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:id="@+id/lblNome" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:ems="10"
+        android:id="@+id/txtNome"
+        android:layout_below="@+id/lblNome"
+        android:text="sidnei"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="E-mail:"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtNome"
+        android:id="@+id/lblEmail" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/lblEmail"
+        android:textColor="@android:color/white"
+        android:ems="10"
+        android:id="@+id/txtEmail"
+        android:text="sid-bandeira@hotmail.com"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Enviar email"
+        android:layout_below="@+id/txtEmail"
+        android:id="@+id/btnEmail" />
+</RelativeLayout>
